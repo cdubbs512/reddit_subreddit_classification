@@ -74,7 +74,7 @@ For more information on how data was gathered, see (Part 1: Data Collection Work
 
 We are going to use NLP models and their underlying algorithms to make predictions and score the accuracy of the models. 
 
-To collect the data I used reddit’s API  and pushshift.io’s API to collect submissions and comments from them. I collected _____ of submissions and _____ number of comments from each team's subreddit. 
+To collect the data I used reddit’s API  and pushshift.io’s API to collect submissions and comments from each team's subreddit. I collected 2834 Barca comments and 2747  Real Madrid comments. 
 
 I took the data, cleaned it of any puntuation and then put it into a master dataframe 'df.'
 
@@ -84,12 +84,12 @@ For Instance my scores on the following models where the following:
 RandomForestClassifier 
 Best cv scores: 
 Train: 0.732 without stop words of names and teams | 0.655 with stop words of names and teams 
-Test: 0.699 without stop words of names and teams |0.608 with stop words of names and teams
+Test: 0.699 without stop words of names and teams | 0.608 with stop words of names and teams
 
 ExtraTreesClassifier
 Best cv scores: 
-Train: 0.743 without stop words of names and teams|0.664 with stop words of names and teams
-Test: 0.699 without stop words of names and teams|0.604 with stop words of names and teams
+Train: 0.743 without stop words of names and teams | 0.664 with stop words of names and teams
+Test: 0.699 without stop words of names and teams | 0.604 with stop words of names and teams
 
 
 Top features is players names. Take the names out, accuracy score drops substantially. Regardless due to the nature of comments being so randomly similar within the two subreddits, the scores are harder to predict without those key 109 first and last names and team names. 
